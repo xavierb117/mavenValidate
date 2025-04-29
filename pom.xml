@@ -13,6 +13,13 @@
   </properties>
 
   <dependencies>
+  <!-- JFreeChart for plotting -->
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.5.3</version>
+    </dependency>
+    
     <!-- JUnit Jupiter -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
