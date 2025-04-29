@@ -7,13 +7,13 @@ Please validate that the below work. If things aren't working, see the Notes sec
 ## Validation Steps
 
 1. Run the code with the below command works. If it's working properly, you should see a graph show up.
-```
-mvn exec:java
-```
+    ```
+    mvn exec:java
+    ```
 1. Run the tests with the below command works. If it's working properly, you should see test results in the terminal.
-```
-mvn test
-```
+    ```
+    mvn test
+    ```
 1. Run the code with the play button in the top right of the VS Code window when App.java is open. You may also be able to do it if a "Run" button appears above the main method.
 1. Run the tests with the testing side panel in VS Code.
 
