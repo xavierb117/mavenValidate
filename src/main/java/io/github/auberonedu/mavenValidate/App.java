@@ -15,15 +15,15 @@ public class App {
     public static void main(String[] args) {
         // Build the data model
         DataModel model = new DataModel();
-        LocalDate start = LocalDate.now().minusDays(9);
+        LocalDate start = LocalDate.now();
         Random rand = new Random();
-        double value = rand.nextDouble() * 10;
+        double value = rand.nextDouble() * 10;  // Start somewhere between 0 and 10
 
-        // Generate 10 points that roughly increase but with some variation
+        // Generate 10 points that mostly increase over time
         for (int i = 0; i < 10; i++) {
             model.addDataPoint(new DataPoint(start.plusDays(i), value));
-            value += rand.nextDouble() * 2 - 1;  // random change in [-1, +1]
-            if (value < 0) value = 0;
+            // Mostly positive changes: random in [+0.2, +2.0]
+            value += 0.2 + rand.nextDouble() * 1.8;
         }
 
         // Create chart
